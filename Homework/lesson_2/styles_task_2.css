@@ -1,4 +1,4 @@
-.proba {
+.Columns {
   color: white;
   text-align: center;
   width: 100%;
@@ -9,13 +9,18 @@ table {
   background: linear-gradient(to right, #3a6bfc, #a914db);
 }
 
-.headline {
-  background-color: #965dcf;
+.bold-text__gradient {
+  background-color: #e52c95;
   line-height: 2;
 }
 
-.cells {
+.bg-rgba__b-10__lh-2 {
   background-color: #d5ddf7;
+  background: rgba(218, 217, 219, 0.51);
   border: 10px;
   line-height: 2;
+  }
+
+tr:hover {
+  background: rgba(245, 245, 245, 0.73);
 }
