@@ -1,13 +1,10 @@
-.Columns {
-  color: white;
+table {
+  color: #FFFFFF;
   text-align: center;
   width: 100%;
   padding: 5px 10px 0px 10px;
   overflow: hidden;
   position: relative;
-}
-
-table {
   background: linear-gradient(to right, #3a6bfc, #a914db);
 }
 
@@ -23,6 +20,22 @@ table {
   line-height: 2;
   }
 
-tr:hover {
-  background: rgba(245, 245, 245, 0.73);
-}
+  td, th {
+    position: relative;
+  }
+
+  tbody tr:hover {
+    background-color: rgba(245, 245, 245, 0.73);
+  }
+
+  tbody td:hover::after,
+  tbody th:hover::after {
+    background-color: rgba(245, 245, 245, 0.73);
+    height: 500px;
+    width: 100%;
+    left: 0;
+    top: -250px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
